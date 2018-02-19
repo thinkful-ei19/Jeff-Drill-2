@@ -4,3 +4,13 @@ function jediName(firstName,lastName){
 }
 console.log(jediName("Jeffrey","Vega"))
 
+function beyond(num){
+if(Infinity=== num ){
+    console.log("and beyond")
+}
+if(0===num){
+    console.log("staying Home")
+}
+}
+// var x = beyond(0)
+// console.log(beyond(0))
