@@ -4,13 +4,21 @@ function jediName(firstName,lastName){
 }
 console.log(jediName("Jeffrey","Vega"))
 
-function beyond(num){
-if(Infinity=== num ){
-    console.log("and beyond")
+function beyond(num) {
+    if(num === Infinity) {
+        console.log('And Beyond');
+		// return 'And Beyond';
+    }
+    if( Number.isFinite(num) && Math.sign(num) == 1) {
+        console.log('To Infinity');
+		// return 'To Infinity';
+    }
+    if( Number.isFinite(num) && Math.sign(num) == -1) {
+        console.log('To Negative Infinity');
+		// return 'To Negative Infinity';
+    }
+    if( num === 0 ) {
+        console.log('Staying Home');
+		// return 'Staying Home';
+    }
 }
-if(0===num){
-    console.log("staying Home")
-}
-}
-// var x = beyond(0)
-// console.log(beyond(0))
