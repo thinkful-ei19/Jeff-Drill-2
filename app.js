@@ -22,3 +22,30 @@ function beyond(num) {
 		// return 'Staying Home';
     }
 }
+
+function decode(str){
+    var stringArray = str.split(' ');
+    var decodedString = ' ';
+    for(let i=0;i<stringArray.length;i++){
+        if(stringArray[i][0]=='a'){
+            decodedString += stringArray[i][1]
+        }
+        else if (stringArray[i][0]=='b'){
+            decodedString += stringArray[i][2]
+        }
+        else if(stringArray[i][0]=='c'){
+            decodedString += stringArray[i][3]
+        }
+        else if (stringArray[i][0]=='d'){
+            decodedString += stringArray[i][4]
+        }
+        else{
+            decodedString += ' ';
+         } 
+        }
+       return decodedString;
+    }
+
+var x = "craft block argon meter bells brown croon droop";
+console.log(decode(x))
+
