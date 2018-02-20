@@ -85,3 +85,47 @@ function day(month,leapyear){
 }
 
 console.log(day("January",2020))
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max)+1);
+  }
+  
+  var xy = getRandomInt(3)
+function game(num1){
+  if(xy === 1){
+      return "rock"
+  }
+  else if (xy === 2){
+      return "paper"
+  }
+  else if(xy === 3){
+  return " scissors"
+}
+if(1 === 1){
+    return "rock"
+}
+else if (2 === 2){
+    return "paper"
+}
+else if(3 === 3){
+return " scissors"
+}
+if(`${rock}`==="rock"){
+    return 'tie'
+}
+else if ("rock"==="scissors"){
+    return "rock wins"
+}
+if("paper"==="paper"){
+    return "tie"
+}
+else if("paper"==="rock"){
+    return "paper wins"
+}
+if("scissors"==="scissors"){
+    return "tie"
+}
+else if("scissors"==='paper')
+return "scissors wins"
+}
+
+console.log(game(2))
